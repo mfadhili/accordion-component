@@ -1,13 +1,74 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+body {
+    font-family: sans-serif;
+    color: #343A40;
+    line-height: 1;
 }
+
+.accordion {
+    width: 700px;
+    margin: 100px auto;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.item {
+    box-shadow: 0 0 30px rgba(0,0,0,0.1);
+    padding: 20px 24px;
+    padding-right: 48px;
+    cursor: pointer;
+    border-top: 4px solid #FFF;
+    border-bottom: 4px solid #FFF;
+
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    column-gap: 24px;
+    row-gap: 32px;
+    align-items: center;
+}
+
+.number {
+    font-size: 24px;
+    font-weight: 500;
+    color: #CED4DA;
+}
+
+.title,
+.icon {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.content-box {
+    grid-column: 2 / -1;
+    padding-bottom: 16px;
+    line-height: 1.6;
+    font-size: 17px;
+}
+
+.open {
+    border-top: 4px solid #087F5B;
+}
+
+.open .number,
+.open .title {
+    color: #087F5B;
+}
+
+
+
+
+
+
+
+
+
+
+
+
